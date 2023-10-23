@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+}
+
+#logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+#logo img {
+  height: 30px;
+  width: 30px;
+}
+
+.vertical-container {
+  height: 137.5vh;
+}
+
+#routeContainer {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+}
+
+.navdiv {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.card {
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.content {
+  border: black dotted 3px;
+}
+.carddiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 20px; /* Adjust as needed for spacing */
+}
+
+.content-container {
+  margin-left: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px; /* Adjust as needed for spacing */
+}
