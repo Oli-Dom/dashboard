@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const DataList = () => {
   let query =
@@ -65,10 +66,24 @@ const DataList = () => {
         <tbody>
           {comics.map((comic) => (
             <tr key={comic.id}>
-              <td style={{ width: '40%', padding: '8px', textAlign: 'left' }}>
-                {comic.title}
+              <td
+                style={{
+                  width: '40%',
+                  padding: '8px',
+                  textAlign: 'left',
+                  borderTop: 'solid 3px black',
+                }}
+              >
+                <Link to={`/comics/${comic.id}`}>{comic.title}</Link>
               </td>
-              <td style={{ width: '30%', padding: '8px', textAlign: 'center' }}>
+              <td
+                style={{
+                  width: '30%',
+                  padding: '8px',
+                  textAlign: 'center',
+                  borderTop: 'solid 3px black',
+                }}
+              >
                 {comic.format}
               </td>
               <td style={{ width: '30%', padding: '8px', textAlign: 'center' }}>
